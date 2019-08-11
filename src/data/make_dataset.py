@@ -5,9 +5,8 @@ from requests import get
 
 
 def parse_pagina(url):
-    """
-    Este método faz a requisição da URL e retorna um objeto BeautifulSoup com a
-    página parseada.
+    """Este método faz a requisição da URL recebida e retorna um objeto
+    BeautifulSoup com a página parseada.
 
     Parâmetros::
 
