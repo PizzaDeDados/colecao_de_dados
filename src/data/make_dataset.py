@@ -5,6 +5,24 @@ from requests import get
 
 
 def parse_pagina(url):
+    """
+    Este método faz a requisição da URL e retorna um objeto BeautifulSoup com a
+    página parseada.
+
+    Parâmetros::
+
+    :param url: string, URL da página a ser parseada
+
+    Retornos::
+
+    :returns: BeautifulSoup
+    :rtype: bs4.BeautifulSoup
+
+    Uso::
+
+      >>> from src import make_dataset as mkdata
+      >>> pagina = mkdata.parse_pagina('https://pizzadedados.com')
+    """
     req = get(url)
     decodificado = req.content.decode('utf-8')
     return BeautifulSoup(decodificado, 'html.parser')
