@@ -19,7 +19,7 @@ def parse_pagina(url):
 
     Uso::
 
-      >>> from src import make_dataset as mkdata
+      >>> from src.data import make_dataset as mkdata
       >>> pagina = mkdata.parse_pagina('https://pizzadedados.com')
     """
     req = get(url)
